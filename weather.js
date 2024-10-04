@@ -23,27 +23,27 @@ const apiKey = "de81d6d50861459ad0392f8e0b6defd0";
         document.querySelector(".wind").innerHTML = data.wind.speed + "km/h";
        
         if(data.weather[0].main == "Clouds"){
-            weatherIcon.src = "file:///C:/Users/shivani_agarwal/Desktop/vs%20code/weather%20project/image/clouds.png";
+            weatherIcon.src = "./image/clouds.png";
         }
         else if(data.weather[0].main == "Clear")
             {
-                weatherIcon.src = "file:///C:/Users/shivani_agarwal/Desktop/vs%20code/weather%20project/image/clear.png";
+                weatherIcon.src = "./image/clear.png";
             }
             else if(data.weather[0].main == "Rain")
                 {
-                    weatherIcon.src = "file:///C:/Users/shivani_agarwal/Desktop/vs%20code/weather%20project/image/rain.png";
+                    weatherIcon.src = "./image/rain.png";
                 }
                 else if(data.weather[0].main == "Drizzle")
                     {
-                        weatherIcon.src = "file:///C:/Users/shivani_agarwal/Desktop/vs%20code/weather%20project/image/drizzle.png";
+                        weatherIcon.src = "./image/drizzle.png";
                     }
                     else if(data.weather[0].main == "Mist")
                         {
-                            weatherIcon.src = "file:///C:/Users/shivani_agarwal/Desktop/vs%20code/weather%20project/image/mist.png";
+                            weatherIcon.src = "./image/mist.png";
                         }
                         else if(data.weather[0].main == "Snow")
                             {
-                                weatherIcon.src = "file:///C:/Users/shivani_agarwal/Desktop/vs%20code/weather%20project/image/snow.png";
+                                weatherIcon.src = "./image/snow.png";
                             }
                  document.querySelector(".weather").style.display = "block" ;
                  document.querySelector(".error").style.display ="none";
